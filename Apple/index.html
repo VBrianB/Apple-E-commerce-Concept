@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple - Home</title>
+</head>
+<body>
+    <header>
+        <div id="topnav">
+        <img src="img/logo.png" class="logo" alt="">
+        <nav>  
+            <a href="#">Home</a>
+            <a href="#" onclick="openMenu()">Products <img src="img/drop-icon.png" id="btn-open" class="" alt=""> </a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+
+
+            <input type="text" name="text" placeholder="Search...">
+            <button type="submit" class="btn-search" value=""><i class="material-icons">search</i></button>
+
+            <a href="#" class="cartBTN" onclick="openCart()"><i class="material-icons cart" >shopping_cart</i></a>
+        </nav>
+       
+        </div>
+       
+    </header>
+    <section id="topnavmobile">
+        <img src="img/logo.png" class="logo" alt="">
+
+
+        <div class="menuToggle" onclick="change(this),ToggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a href="#" class="cartBTN" onclick="openCart()"><i class="material-icons cart" >shopping_cart</i></a>
+    </section>
+    <section id="MenuArea" class="">
+        <ul class="Menu-mobile">
+            
+            <li><a href="#">Home</a></li>
+            
+            <li><a href="#" id="drop-down-mobile" class="prod-title"> Products <button class="btn-mobile-subproducts" onclick="MobileDropDown()"><img src="img/drop-icon.png" id="img-drop-mobile" class=""></button></a>
+                <ul id="subP" class="sub-products">
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">AirPod</a></li>
+                </ul>
+            
+        </li>
+            
+            <li><a href="#">Acessories</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </section>
+
+    
+
+    <div id="dropdown" class="">
+        <ul>
+            <p>Mac</p>
+            <li><a href="#">Home</a><a href="#">Mac Studio</a> </li>
+            <li><a href="#">Home</a><a href="#">Studio Display</a> </li>
+            <li><a href="#">Home</a><a href="#">MacBook Pro</a> </li>
+            <li><a href="#">Home</a><a href="#"> Mac mini</a></li>
+            <li><a href="#">Home</a><a href="#">Mac Pro</a> </li>
+        </ul>
+        <ul>
+            <p>iPhone</p>
+            <li><a href="#">Home</a><a href="#">iPhone 13</a> </li>
+            <li><a href="#">Home</a><a href="#">iPhone SE </a> </li>
+            <li><a href="#">Home</a><a href="#">iPhone 12</a> </li>
+            <li><a href="#">Home</a><a href="#">iPhone 11</a> </li>
+            <li><a href="#">Home</a><a href="#">iPhone X</a> </li>
+        </ul>
+         <ul>
+            <p>iPad</p>
+            <li><a href="#">Home</a><a href="#">Air Pad</a> </li>
+            <li><a href="#">Home</a><a href="#">iPad</a> </li>
+            <li><a href="#">Home</a><a href="#">iPad mini</a> </li>
+            <li><a href="#">Home</a><a href="#">iPad Pro</a> </li>
+            <li><a href="#">Home</a><a href="#">Accessories iPad</a> </li>
+        </ul>
+        <ul>
+            <p>AirPods</p>
+            <li><a href="#">Home</a><a href="#">AirPods 2ª geração </a> </li>
+            <li><a href="#">Home</a><a href="#">AirPods 3ª geração</a> </li>
+            <li><a href="#">Home</a><a href="#">AirPods Pro</a> </li>
+            <li><a href="#">Home</a><a href="#">AirPods Max</a> </li>
+            <li><a href="#">Home</a><a href="#">Apple Music</a> </li>
+        </ul>
+        <a href="#" class="see-all"> see all products >></a>
+      
+    </div>
+
+<main>
+    <div id="iphone13"> 
+            <div class="text">
+                <div class="box-text">
+                <h3>iPhone 13</h3>
+                <h4>Your new super power</h4>
+
+               
+               
+            </div>
+            </div>
+         
+        </div>
+        <div class="img">
+        <img src="img/iphone.png" class="iphone-13-back" alt="">
+    </div>
+        <div class="modalstart">
+            <button class="button-modal" onclick="modalVideo()"><img src="img/icon-play.png" class="btn-play"alt=""></button>
+        </div>
+        <div id="ModalArea" class="">
+            <div class="boxModal activeBox">
+            <button class="button-modal absolute" onclick="modalVideo()"><img src="img/btn-close.png" class="btn-close" alt=""></button>
+            <div class="content-modal">
+               
+                <h3 class="title-modal">iPhone 13 </h3>
+                <h4 class="description-modal">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti optio excepturi tempora deserunt ducimus dignissimos mollitia dolores atque ratione fugit quos culpa amet. Error iusto quo ducimus in numquam.
+                </h4>
+                
+                <div class="video-modal">
+                    <video src="img/iphone13.mp4" controls="controls"   class="video-main">
+                </div>
+
+           
+            </div>
+        </section>
+    </section>
+</main>
+<section>
+    <div id="flat">
+        <img src="img/flat-pink-iphone.jpg" class="flat-pink-iphone" alt="">
+        <h3 class="flat-pink-text">
+        <font color="#fec2eb">Durable</font>     <br>
+            flat-edge
+            design
+        </h3>
+       
+
+        
+    </section>
+</section>
+<section>
+    <div id="ceramic">
+        
+        <h3 class="ceramic-text-iphone">
+            Ceramic Shield,  <font color="#fec2eb">tougher</font>  than any smartphone glass
+
+
+        </h3>
+        <img src="img/border-pink-iphone.jpg" class="border-pink" alt="">
+    </div>
+</section>
+
+<section id="colors" class="green">
+    <div id="color-iphone-change">
+
+        <img src="" alt="">
+
+        <div class="labels">
+        <label for="pink" class="label pink" onclick="changePink()">
+            <input type="radio" id="pink" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        
+        <label for="green" class="label green" onclick="changeGreen()">
+
+            <input type="radio" id="green" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+       
+        <label for="blue" class="label blue" onclick="changeBlue()">
+            <input type="radio" id="blue" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        <label for="midnight" class="label midnight" onclick="changeMid()">
+            <input type="radio" id="midnight" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        
+        <label for="starlight" class="label starlight" onclick="changeStar()">
+
+            <input type="radio" id="starlight" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+       
+        <label for="red" class="label red" onclick="changeRed()">
+            <input type="radio" id="red" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+    </div>
+    
+</section>
+</body>
+<script src="script.js"></script>
+</html>
