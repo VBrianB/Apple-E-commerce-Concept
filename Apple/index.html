@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Apple - Home</title>
 </head>
@@ -113,13 +112,15 @@
             </div>
             </div>
          
-        </div>
+        
         <div class="img">
         <img src="img/iphone.png" class="iphone-13-back" alt="">
     </div>
-        <div class="modalstart">
-            <button class="button-modal" onclick="modalVideo()"><img src="img/icon-play.png" class="btn-play"alt=""></button>
-        </div>
+    <div class="modalstart">
+        <button class="button-modal" onclick="modalVideo()"><img src="img/icon-play.png" class="btn-play"alt=""></button>
+    </div>
+    </div>
+        
         <div id="ModalArea" class="">
             <div class="boxModal activeBox">
             <button class="button-modal absolute" onclick="modalVideo()"><img src="img/btn-close.png" class="btn-close" alt=""></button>
@@ -164,14 +165,53 @@
     </div>
 </section>
 
-<section id="colors" class="green">
+<section id="colors" class="">
+    
     <div id="color-iphone-change">
 
+        <img src="img/iphone-pink.png" id="iphone-change" class="iphone-colors" alt="">
         <img src="" alt="">
 
+
+        <div id="text-pink">
+            <h3 class="text-h3"> <font color="#fec2eb">Beautiful</font>
+                <br>
+                Pink
+                finish </h3>
+        </div>
+        <div id="text-green">
+            <h3 class="text-h3"><font color="#394c38">New </font><br>
+                Green
+                finish
+        </div>
+        <div id="text-blue">
+            <h3 class="text-h3"><font color="#b6ff9b">Beautiful</font><br>
+                Blue
+                finish
+        </div>
+        <div id="text-midnight">
+            <h3 class="text-h3"><font color="#ffa9ab">Beautiful</font><br>  
+            Midnight
+            finish
+        </div>
+        <div id="text-starlight">
+            <h3 class="text-h3"><font color="#72e5ce">Starlight</font><br>
+                Starlight
+                finish
+        </div>
+        <div id="text-red">
+            <h3 class="text-h3"><font color="#ffb44c"> Beautiful</font><br>
+                
+                Red
+                finish
+                
+                
+                </h3>
+        </div>
+    
         <div class="labels">
         <label for="pink" class="label pink" onclick="changePink()">
-            <input type="radio" id="pink" name="cor">
+            <input type="radio" id="pink" name="cor" >
             <div class="check">
                 <div class="select"></div>
             </div>
@@ -212,8 +252,14 @@
                 <div class="select"></div>
             </div>
         </label>
+
+
+
+        
+
     </div>
-    
+  
+  
 </section>
 </body>
 <script src="script.js"></script>

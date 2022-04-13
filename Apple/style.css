@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -154,6 +154,7 @@ animation-duration: 1s;
 }
 main{
     background-color: #35283c;
+  
    
    
 }
@@ -269,7 +270,6 @@ margin-top: 30px;
   overflow: auto; 
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.801); 
-  cursor: pointer;
   transition: 1s;
   cursor: url("img/Group\ 1\ \(6\).png"),auto;
    
@@ -420,33 +420,55 @@ margin-top: 30px;
 }
 
 #color-iphone-change{
-    display: flex;
-    
-    width: 100%;
     max-width: 1366px;
     margin: auto;
+
 }
 .labels{
     margin-left: 50px;
-   margin-top: 50px;
-   position: static;
+    margin-top: 50px; 
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(1, 1, 3, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 40px;
+    padding: 20px 5px;
+    margin-right: 50px;
+    margin-bottom: 50px;
    
   
 }
 #colors{
     transition: .4s;
     border-bottom: 0px;
+    background-color: #35283c;
+   
+    
+ 
 }
 #colors.green{
     background-color: #f5f5f7;
     
+}
+#colors.blue{
+   background-color:  #0c3139;
+}
+#colors.midnight{
+    background-color: #12203b;
+}
+#colors.starlight{
+    background-color: #2e2e3a;
+}
+#colors.red{
+    background-color: #3e1921;
 }
 
 .label{
     
 
     padding: 30px 6px;
-   
     max-height: 20px;
     border-radius: 50%;
    display: flex;
@@ -512,7 +534,14 @@ margin-top: 30px;
     background-color: #394c38;
     border-radius: 50%;
 }
-
+#color-iphone-change{
+    padding-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow:hidden;
+   
+}
 
 
 
@@ -591,7 +620,52 @@ margin-top: 30px;
     background-color: #bf0013;
     border-radius: 50%;
 }
+.iphone-colors{
+ 
+   
+    width: 600px;
+    margin-top: 2em;
+    margin-bottom: -15px;
+}
 
+.text-h3{
+    font-size:72px;
+    color: white;
+    animation-name:  showtext ;
+    animation-duration: 1s;
+}
+#text-green{
+    display: none;
+    
+}
+#text-green .text-h3{
+    color: #333;
+}
+#text-blue{
+    display: none;
+}
+#text-midnight{
+    display: none;
+}
+#text-starlight{
+    display: none;
+}
+#text-red{
+    display: none;
+}
+#text-red .text-h3.red{
+    font-family: Bebas Neue;
+    font-size: 52px;
+}
+
+@keyframes showtext{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 
 
 
