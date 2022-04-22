@@ -9,10 +9,13 @@
 }
 section{
     background-color: #35283c;
-    border-bottom: 20px solid #0c080e ;
+   border-bottom: 20px solid #0c080e62 ;
 }
 ul{
     list-style: none;
+}
+li{
+    display: inline-block;
 }
 a{
     text-decoration: none;
@@ -24,6 +27,7 @@ button{
 }
 header{
     background-color: #fff;
+    z-index: 2;
     
 }
 .logo{
@@ -32,13 +36,14 @@ header{
     margin-left: 40px;
 }
 #topnav{
-    height: 80px;
+    height:auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
     max-width: 1366px;
     margin: auto;
+   
    
 }
 nav{
@@ -49,8 +54,9 @@ nav{
 nav a{
     display: flex;
     align-items: center;
-    padding: 30px 42px;
+    padding: 20px 42px;
     color: black;
+    font-weight: 500;
    
    
 
@@ -83,19 +89,27 @@ input[type="text"]{
     border-radius: 32px 32px  0px 0px;
     padding: 10px 32px;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.247);
     margin: 0 1em;
+}
+input[type="text"]::placeholder{
+    color: rgba(0, 0, 0, 0.288);
+    font-style: italic;
 }
 
 .cartBTN{
     color: black;
     padding: 0px;
-    width: 32px;
+    width: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 32px;
-    margin: 0 1em;
+    height: 24px;
+    margin: 0 3em;
+}
+.cartBTN img{
+    width: 100%;
+    height: 100%;
 }
 #dropdown{
     transition: 1s;
@@ -106,7 +120,7 @@ input[type="text"]{
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.315);
     transition: .7s;
-    z-index: -5;
+   
     
     
     
@@ -154,6 +168,7 @@ animation-duration: 1s;
 }
 main{
     background-color: #35283c;
+    border-bottom: 20px solid #0c080e62 ;
   
    
    
@@ -171,6 +186,7 @@ main{
     flex-direction: column;
     align-items: center;
     text-align: center;
+   
    
 }
 
@@ -357,6 +373,7 @@ margin-top: 30px;
 
 #topnavmobile{
     display: none;
+    border: none;
 }
 #MenuArea{
     display: none;
@@ -436,7 +453,7 @@ margin-top: 30px;
     border-radius: 40px;
     padding: 20px 5px;
     margin-right: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
    
   
 }
@@ -444,6 +461,7 @@ margin-top: 30px;
     transition: .4s;
     border-bottom: 0px;
     background-color: #35283c;
+    border-bottom: 20px solid #0c080e62 ;
    
     
  
@@ -511,12 +529,6 @@ margin-top: 30px;
     background-color: #fec2eb;
     border-radius: 50%;
 }
-
-
-
-
-
-
 .label.green:active{
     border: none;
     box-shadow: #394c3856 0 0 0 50px;
@@ -540,7 +552,7 @@ margin-top: 30px;
     display: flex;
     justify-content: space-between;
     overflow:hidden;
-   
+    
 }
 
 
@@ -622,9 +634,9 @@ margin-top: 30px;
 }
 .iphone-colors{
  
-   
+    max-height: 400px;
     width: 600px;
-    margin-top: 2em;
+    margin-top: 15em;
     margin-bottom: -15px;
 }
 
@@ -653,10 +665,105 @@ margin-top: 30px;
 #text-red{
     display: none;
 }
-#text-red .text-h3.red{
-    font-family: Bebas Neue;
-    font-size: 52px;
+#product-specifications{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh 40vh ;
+    padding: 150px 0;
+    gap: 50px 0;
+    max-width: 1366px;
+    margin: auto;
+    border: none;
 }
+.item-spe{
+    background-color: #35283c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.items-spe-text{
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#buy{
+    padding: 100px 0;
+    max-width: 1366px;
+    margin: auto;
+    text-align: center;
+}
+#buy h3{
+    color: white;
+}
+#buy .name{
+    font-size: 24px;
+    
+}
+#buy .desc{
+    font-size: 122px;
+    font-weight: 500;
+    line-height: 1;
+    
+    margin-left: 25px;
+}
+#buy .price{
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.541);
+    margin-top: 42px;
+    margin-left: 25px;
+
+}
+#buy .btns-buy{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#buy ul li{
+    margin: 0 .3em;
+}
+.btn-buy{
+    padding: 16px 36px;
+    border-radius: 25px;
+    background-color: #0071e3;
+    color: white;
+    text-transform: uppercase;
+    transition: .4s;
+    margin: 0 .3em;
+}
+.btn-buy:hover{
+    padding: 16px 42px;
+    
+}
+.watch{
+    background: none;
+    border: 1px solid #0071e3;
+    padding: 14px 20px;
+    text-transform: uppercase;
+    color: #0071e3;
+    border-radius: 25px;
+    transition: .4s;
+    margin: 0 .3em;
+}
+.watch:hover{
+    background-color: #0071e3;
+    color: white;
+    padding: 14px 28px;
+}
+   
+
+
+
+
+
+
+
+
 
 @keyframes showtext{
     from{
@@ -666,13 +773,7 @@ margin-top: 30px;
         opacity: 1;
     }
 }
-
-
-
-
-
 @media (max-width:1024px){
-   
     .cartBTN{
         margin: 0;
     }
@@ -700,18 +801,24 @@ margin-top: 30px;
         margin-left:150px;
         margin-top: 50px;
     }
-}
+    #buy .desc{
+        margin-left: 0;
 
+    }
+    #buy .price{
+        margin-left: 0;
+    }
+}
 @media (max-width:1023px){
+    
     #ceramic{
         overflow: hidden;
     }
-    
     .logo{
-       top:22px;
+       margin-bottom: 15px;
     }
     .cartBTN{
-        top: 24px;
+        margin-top: 5px;
     }
     #MenuArea{
         display: none;
@@ -798,6 +905,25 @@ margin-top: 30px;
         animation-duration: .4s;
 
     }
+    #color-iphone-change{
+        flex-direction: column;
+        align-items: center;
+    }
+    #iphone-change{
+        order: 3;
+    }
+    .labels{
+        width: 90%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+       
+    }
+    #text-pink, #text-green, #text-blue, #text-midnight, #text-starlight, #text-red{
+        text-align: center;
+        margin-bottom: 150px;
+    }
     @keyframes menushow{
         from{
             margin-left: -50%;
@@ -844,7 +970,7 @@ margin-top: 30px;
       }
     
     #topnavmobile{
-        height: 80px;
+        height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -855,6 +981,7 @@ margin-top: 30px;
         
     }
     .logo{
+        
         width: 32px;
         height: 32px;
         margin-left: 0;
@@ -862,14 +989,34 @@ margin-top: 30px;
         left: 50%;
         transform: translate(-50%);
     }
+  
     #topnav{
-        height: 80px;
+      
         display: none;
     }
-   
+    .iphone-colors{
+ 
+        max-height: 400px;
+        width: 600px;
+        margin-top:0em;
   
     
 } 
+#product-specifications{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+}
+.item-spe{
+    margin-top: 150px;
+}
+.items-spe-text{
+    margin: 0 15px;
+}
+#buy .desc{
+    font-size: 64px;
+}
+}
 @media(max-width:425px){
    
     .flat-pink-text{
@@ -940,6 +1087,19 @@ margin-top: 30px;
     .text h4{
         font-size: 26px;
     }
+    .iphone-colors{
+        width: 70%;
+    }
+    .text-h3{
+        font-size: 56px;
+    }
+    .items-spe-text{
+        font-size: 18px;
+    }
+    .item-spe{
+        margin-top: 30px;
+    }
+   
 }
 @media(max-width:424px){
     .flat-pink-text{
@@ -970,16 +1130,64 @@ margin-top: 30px;
     max-height: 265px;
    
 }
+.labels{
+    width: 95%;
+ 
 }
-@media(max-width:320px)
-{
+#buy .name{
+    font-size: 16px;
+}
+#buy .desc{
+    font-size: 56px;
+   
+}
+#buy .price{
+    font-size: 16px;
+    margin: 12px .3em;
+}
+#buy .btns-buy{
+    margin-top: 15px;
+}
+#buy a{
+  font-size: 12px;
+}
+}
+@media(max-width:320px){
+    .labels .label{
+        margin: 0;
+        padding: 30px 0;
+    }
     .flat-pink-iphone{
         right: -25px;
     }
+    .flat-pink-text{
+       margin-left: .3em;
+       margin-right: .3em;
+    }
+    .text-h3{
+        font-size:32px;
+    }
+    
 }
 @media(max-width:280px){
+    .labels{
+        flex-direction: column;
+        width: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
     .flat-pink-iphone{
         right: -5px;
+    }
+    .labels .label{
+        margin: 0;
+        padding: 30px 6px;
+    }
+    #buy .desc{
+        font-size: 42px;
+    }
+    #buy a{
+        font-size: 10px;
     }
 }
 
