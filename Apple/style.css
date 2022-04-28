@@ -7,6 +7,9 @@
     outline: 0;
     
 }
+html{
+    zoom: 80%;
+}
 .gray{
     background-color: #fbfbfd;
     border-bottom: 20px solid white;
@@ -1279,9 +1282,9 @@ margin-top: 30px;
     }
 }
 @media(max-width:424px){
-    .menuToggle{
+.menuToggle{
         margin-top: 2px;
-    }
+}
 .text h3{
     font-size: 20px;
 }
