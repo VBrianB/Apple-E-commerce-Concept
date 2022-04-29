@@ -894,6 +894,295 @@ margin-top: 30px;
     margin-top: 80px;
    
 }
+#ipad{
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 30px;
+
+}
+.iPad{
+    width: 100%;
+    max-width: 800px;
+}
+.text-area-ipad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.text-area-ipad .title{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.name-ipad{
+    max-width: 350px;
+}
+.btns-ipad{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid-plus{
+    background-color: white;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    
+    
+   
+}
+.items{
+    background-color: #fbfbfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5em;
+    padding: 60px 0;
+   
+}
+.applewatch{
+    transition: .4s;
+    text-align: center;
+}
+.applewatch .title{
+    font-size: 26px;
+    font-weight: 400;
+}
+.applewatch:hover .watch-prod{
+    transform: scale(1.2);
+}
+.watch-name{
+    margin: 30px 0;
+    width: 100%;
+    max-width: 170px;
+}
+.watch-prod{
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    margin-top: 50px;
+}
+.btns-items{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn-more-item{
+    border: 1px solid black;
+    padding: 16px 32px;
+    border-radius: 32px;
+    margin: 0 15px;
+}
+.buy-item{
+    border: 1px solid black;
+    padding: 16px 64px;
+    border-radius: 32px;
+    margin: 0 15px;
+    transition: .4s;
+}
+.buy-item:hover{
+    transform: translateY(-8px);
+    background-color: black;
+    color: white;
+}
+.fitness{
+    background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.144)), url(img/fitness.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .4s;
+}
+.fitness:hover{
+    box-shadow: inset 0 0 90px #000000;;
+}
+.fitness-name{
+    margin: 40px 0;
+}
+.fitness .title{
+    font-size: 28px;
+    color: white;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.btns-fitness{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-learn.green{
+    color: #a6ff00;
+    border: 1px solid #a6ff00;
+}
+.btn-learn.green:hover{
+    background-color:#a6ff00 ;
+    font-weight: 500;
+    color: black;
+}
+.btn-buy-se.green{
+    background-color:#a6ff00;
+    border: 1px solid #a6ff00;
+    color: black;
+    font-weight: 500;
+}
+.studio:hover .studio-product{
+    transform: scale(1.1);
+}
+.studio .title{
+    margin:30px 0;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.studio .desc{
+    
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.studio-product{
+    width: 100%;
+    max-width: 620px;
+    margin-top: 20px;
+    transition: .4s;
+}
+.airpods{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+   
+}
+.air-pods-area{
+    color: white;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.air-pods-area .title{
+    margin-top: 30px;
+    font-size: 72px;
+    font-weight: 700;
+}
+.air-pods-area .desc{
+    font-size: 24px;
+    font-weight: 400;
+}
+.air-pods-area .price{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.airpods-product{
+    width: 100%;
+    max-width: 420px;
+    margin-top: 50px;
+}
+.airpods-back{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.144)), url(img/AirPods.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: .4s;
+}
+.airpods:hover .airpods-back{
+    filter: blur(2px);
+    transform: scale(1.2);
+}
+.air-btn{
+    margin: 15px 0;
+    margin-bottom: 50px;
+}
+.tvplus{
+    position: relative;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+   
+}
+.tv-back{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.808), rgba(0, 0, 0, 0.267)), url(img/friday-night.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: .4s;
+}
+.tvplus-area{
+    color: white;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+}
+.text-area-tvplus{
+    margin-top: 350px;
+}
+.text-area-tvplus .title{
+    font-size: 24px;
+    font-weight: 500;
+}
+.friday-text{
+    margin: 80px 0;
+    width: 100%;
+    max-width: 220px;
+    margin-top: 100px;
+   
+}
+.catch{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    margin: 24px 0;
+}
+.catch:hover{
+    text-decoration: underline;
+    color: #0071e3;
+}
+.seeall{
+   display: flex;
+   justify-content: center;
+   transition: .6s;
+ 
+  
+
+}
+.see-all-text{
+    text-align: center;
+    font-size: 42px;
+    margin:  0 2em;
+}
+
+.seeall:hover{
+   background-color: rgb(24, 21, 21);
+   
+}
+.seeall:hover .see-all-text a{
+    transition:.6s;
+}
+.seeall:hover .see-all-text a{
+    color: white;
+}
+
+
 
 
 
@@ -1144,7 +1433,37 @@ margin-top: 30px;
 #buy .desc{
     font-size: 64px;
 }
+#ipad{
+    width: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 30px;
 
+}
+#grid-plus{
+    background-color: white;
+    border: none;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+    
+    
+   
+}
+.btns-fitness{
+   margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 450px;
+}
+.fitness .title{
+    text-align: center;
+}
 }
 @media(max-width:425px){
    
@@ -1280,6 +1599,9 @@ margin-top: 30px;
       
         padding: 20px;
     }
+    .iPad{
+        margin-top: 50px;
+    }
 }
 @media(max-width:424px){
 .menuToggle{
@@ -1313,6 +1635,14 @@ margin-top: 30px;
 }
 #buy a{
   font-size: 12px;
+}
+.text-area-ipad .title{
+    font-size: 28px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.name-ipad{
+    max-width: 250px;
 }
 }
 @media(max-width:320px){
