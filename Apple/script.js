@@ -136,6 +136,12 @@ function changeRed(){
     document.getElementById('text-starlight').style.display = 'none';
     document.getElementById('text-red').style.display = 'block';
 }
+function openSearch(){
+  Search =  document.getElementById('search-top');
+  Search.classList.toggle("active")  
+
+
+}
 
 
 

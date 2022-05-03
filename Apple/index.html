@@ -25,7 +25,7 @@
             
         </nav>
         <div class="nav-btns-cart-search">
-        <button type="submit" class="btn-search" value=""><img src="img/icon-search.png" class="icon" alt=""></button>
+        <button type="submit" class="btn-search" onclick="openSearch()" value=""><img src="img/icon-search.png" class="icon" alt=""></button>
 
         <a href="#" class="cartBTN" onclick="openCart()"><img src="img/cart.png" class="icon" alt=""></a>
     </div>
@@ -33,41 +33,45 @@
         <div id="dropdown" class="">
             <ul>
                 <p>Mac</p>
-                <li><a href="#">Mac Studio</a> </li>
-                <li><a href="#">Studio Display</a> </li>
-                <li><a href="#">MacBook Pro</a> </li>
-                <li><a href="#"> Mac mini</a></li>
-                <li><a href="#">Mac Pro</a> </li>
+                <li><a href="#"></a> <a href="#">Mac Studio</a> </li>
+                <li><a href="#"></a> <a href="#">Studio Display</a> </li>
+                <li><a href="#"></a> <a href="#">MacBook Pro</a> </li>
+                <li><a href="#"></a> <a href="#"> Mac mini</a></li>
+                <li><a href="#"></a> <a href="#">Mac Pro</a> </li>
             </ul>
             <ul>
                 <p>iPhone</p>
-                <li><a href="#">iPhone 13</a> </li>
-                <li><a href="#">iPhone SE </a> </li>
-                <li><a href="#">iPhone 12</a> </li>
-                <li><a href="#">iPhone 11</a> </li>
-                <li><a href="#">iPhone X</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone 13</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone SE </a> </li>
+                <li><a href="#"></a> <a href="#">iPhone 12</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone 11</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone X</a> </li>
             </ul>
              <ul>
                 <p>iPad</p>
-                <li><a href="#">Air Pad</a> </li>
-                <li><a href="#">iPad</a> </li>
-                <li><a href="#">iPad mini</a> </li>
-                <li><a href="#">iPad Pro</a> </li>
-                <li><a href="#">Accessories iPad</a> </li>
+                <li><a href="#"></a> <a href="#">Air Pad</a> </li>
+                <li><a href="#"></a> <a href="#">iPad</a> </li>
+                <li><a href="#"></a> <a href="#">iPad mini</a> </li>
+                <li><a href="#"></a> <a href="#">iPad Pro</a> </li>
+                <li><a href="#"></a> <a href="#">Accessories iPad</a> </li>
             </ul>
             <ul>
                 <p>AirPods</p>
-                <li><a href="#">AirPods 2ª geração </a> </li>
-                <li><a href="#">AirPods 3ª geração</a> </li>
-                <li><a href="#">AirPods Pro</a> </li>
-                <li><a href="#">AirPods Max</a> </li>
-                <li><a href="#">Apple Music</a> </li>
+                <li><a href="#"></a> <a href="#">AirPods 2ª geração </a> </li>
+                <li><a href="#"></a> <a href="#">AirPods 3ª geração</a> </li>
+                <li><a href="#"></a> <a href="#">AirPods Pro</a> </li>
+                <li><a href="#"></a> <a href="#">AirPods Max</a> </li>
+                <li><a href="#"></a> <a href="#">Apple Music</a> </li>
             </ul>
             <a href="#" class="see-all"> see all products >></a>
           
         </div>
+        <div id="search-top" class="active">
+            <input type="text" placeholder="Search apple.com">  <button type="submit" class="btn-search" value=""><img src="img/icon-pesquisa.png" class="icon" alt=""></button> <div class="closeSearch" onclick="openSearch()">  <div class="bar1-s "></div><div class="bar2-s "></div> </div>
+        </div>
     
     </header>
+
     <section id="topnavmobile">
        
 
@@ -77,6 +81,7 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
+
         <img src="img/logo.png" class="logo" alt="">
         
         <a href="#" class="cartBTN" onclick="openCart()"><img src="img/cart.png" alt=""></a>
@@ -84,20 +89,19 @@
     <section id="MenuArea" class="">
         <ul class="Menu-mobile">
             
-            <li></li>
-            
+            <li><a href="#">Home</a></li>
             <li><a href="#" id="drop-down-mobile" class="prod-title"> Products <button class="btn-mobile-subproducts" onclick="MobileDropDown()"><img src="img/drop-icon.png" id="img-drop-mobile" class=""></button></a>
                 <ul id="subP" class="sub-products">
                     <li><a href="#">Mac</a></li>
                     <li><a href="#">iPhone</a></li>
                     <li><a href="#">iPad</a></li>
-                    <li><a href="#">AirPod</a></li>
+                    <li> <a href="#">AirPod</a></li>
                 </ul>
             
         </li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Acessories</a></li>
-            <li><a href="#">Support</a></li>
+            
+            <li> <a href="#">Acessories</a></li>
+            <li> <a href="#">Support</a></li>
         </ul>
     </section>
 
@@ -410,6 +414,65 @@
        
     </div>
 </section>
+<footer>
+    <section id="footer">
+        <div class="text-footer-ex">
+            $4.99/month after free trial. Only one offer per Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. This offer is not available if you or your Family have previously accepted an Apple TV+ one year free offer. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
+        </div>
+        <div class="row-footer">
+
+
+                <ul>
+                    <p>Shop </p>
+                    <li><a href="#">Store</a> </li>
+                    <li><a href="#">iphone</a> </li>
+                    <li><a href="#">iPad</a> </li>
+                    <li><a href="#">Macbook</a> </li>
+                    <li><a href="#">AirPods</a> </li>
+                    <li><a href="#">Watch</a> </li>
+                    <li><a href="#">Acessories</a> </li>
+                </ul>
+           
+                
+                <ul class="footer-links">
+                    <p>Services</p>
+                    <li><a href="#">Apple music</a> </li>
+                    <li><a href="#">Apple TV+</a> </li>
+                    <li><a href="#">Apple Fitness/a> </li>
+                    <li><a href="#">Apple News</a> </li>
+                    <li><a href="#">iCloud</a> </li>
+                    <li><a href="#">App Store</a> </li>
+                </ul>
+            
+          
+                <ul>
+                    <p>About Apple </p>
+                    <li><a href="#">Newsroom</a> </li>
+                    <li><a href="#">Apple Leadership</a> </li>
+                    <li><a href="#">Career Opportunities</a> </li>
+                    <li><a href="#">Investors</a> </li>
+                    <li><a href="#">Ethics & Compliance</a> </li>
+                    <li><a href="#">Contact Apple</a> </li>
+                </ul>
+
+               
+            </div>
+            <h3 class="more"> More ways to shop <a href="#">Find an Apple Store</a>  or <a href="#"> other retailer</a> near you. Or call 1-800-MY-APPLE.</h3>
+        </div>
+        <div class="copy">
+            <h3 class="copy-text">
+                Copyright © 2022 Apple Inc. All rights reserved.
+            </h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+                <li class="none-b"><a href="#" >Site Map</a></li>
+            </ul>
+            
+    </section>
+</footer>
 </body>
 <script src="script.js"></script>
 </html>
