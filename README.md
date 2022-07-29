@@ -2,7 +2,7 @@
 
 Este projeto é uma reecriação da HomePage da Apple, mas com um layout feito por mim, com html css e um pouco de javascript, o principal foco desse layout foi destacar o lançamento do iphone 13.
 
-Você pode ver o site funcionando [AQUI](https://vbrianb.github.io/Apple-E-commerce-Concept/)
+Você pode ver o site funcionando [AQUI](https://vbrianb.github.io/Apple-E-commerce-Concept)
 
 ## 💡 Ideia 
 
