@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Apple - Home</title>
+</head>
+<body>
+    <header>
+        <div id="topnav">
+        <img src="img/logo.png" class="logo" alt="">
+        <nav>  
+            <a href="#">Home</a>
+            <a href="#" onclick="openMenu()">Products <img src="img/drop-icon.png" id="btn-open" class="" alt=""> </a>
+            <a href="#">Accessories</a>
+            <a href="#">Support</a>
+
+
+            
+            
+        </nav>
+        <div class="nav-btns-cart-search">
+        <button type="submit" class="btn-search" onclick="openSearch()" value=""><img src="img/icon-search.png" class="icon" alt=""></button>
+
+        <a href="#" class="cartBTN" onclick="openCart()"><img src="img/cart.png" class="icon" alt=""></a>
+    </div>
+        </div>
+        <div id="dropdown" class="">
+            <ul>
+                <p>Mac</p>
+                <li><a href="#"></a> <a href="#">Mac Studio</a> </li>
+                <li><a href="#"></a> <a href="#">Studio Display</a> </li>
+                <li><a href="#"></a> <a href="#">MacBook Pro</a> </li>
+                <li><a href="#"></a> <a href="#"> Mac mini</a></li>
+                <li><a href="#"></a> <a href="#">Mac Pro</a> </li>
+            </ul>
+            <ul>
+                <p>iPhone</p>
+                <li><a href="#"></a> <a href="#">iPhone 13</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone SE </a> </li>
+                <li><a href="#"></a> <a href="#">iPhone 12</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone 11</a> </li>
+                <li><a href="#"></a> <a href="#">iPhone X</a> </li>
+            </ul>
+             <ul>
+                <p>iPad</p>
+                <li><a href="#"></a> <a href="#">Air Pad</a> </li>
+                <li><a href="#"></a> <a href="#">iPad</a> </li>
+                <li><a href="#"></a> <a href="#">iPad mini</a> </li>
+                <li><a href="#"></a> <a href="#">iPad Pro</a> </li>
+                <li><a href="#"></a> <a href="#">Accessories iPad</a> </li>
+            </ul>
+            <ul>
+                <p>AirPods</p>
+                <li><a href="#"></a> <a href="#">AirPods 2ª geração </a> </li>
+                <li><a href="#"></a> <a href="#">AirPods 3ª geração</a> </li>
+                <li><a href="#"></a> <a href="#">AirPods Pro</a> </li>
+                <li><a href="#"></a> <a href="#">AirPods Max</a> </li>
+                <li><a href="#"></a> <a href="#">Apple Music</a> </li>
+            </ul>
+            <a href="#" class="see-all"> see all products >></a>
+          
+        </div>
+        <div id="search-top" class="active">
+            <input type="text" placeholder="Search apple.com">  <button type="submit" class="btn-search" value=""><img src="img/icon-pesquisa.png" class="icon" alt=""></button> <div class="closeSearch" onclick="openSearch()">  <div class="bar1-s "></div><div class="bar2-s "></div> </div>
+        </div>
+    
+    </header>
+
+    <section id="topnavmobile">
+       
+
+
+        <div class="menuToggle" onclick="change(this),ToggleMenu()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+
+        <img src="img/logo.png" class="logo" alt="">
+        
+        <a href="#" class="cartBTN" onclick="openCart()"><img src="img/cart.png" alt=""></a>
+    </section>
+    <section id="MenuArea" class="">
+        <ul class="Menu-mobile">
+            
+            <li><a href="#">Home</a></li>
+            <li><a href="#" id="drop-down-mobile" class="prod-title"> Products <button class="btn-mobile-subproducts" onclick="MobileDropDown()"><img src="img/drop-icon.png" id="img-drop-mobile" class=""></button></a>
+                <ul id="subP" class="sub-products">
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li> <a href="#">AirPod</a></li>
+                </ul>
+            
+        </li>
+            
+            <li> <a href="#">Acessories</a></li>
+            <li> <a href="#">Support</a></li>
+        </ul>
+    </section>
+
+    
+
+   
+<main>
+    <div id="iphone13"> 
+            <div class="text">
+                <div class="box-text">
+                <h3>iPhone 13</h3>
+                <h4>Your new super power</h4>
+
+               
+               
+            </div>
+            </div>
+         
+        
+        <div class="img">
+        <img src="img/iphone.png" class="iphone-13-back" alt="">
+    </div>
+    <div class="modalstart">
+        <button class="button-modal" onclick="modalVideo()"><img src="img/icon-play.png" class="btn-play"alt=""></button>
+    </div>
+    </div>
+        
+        <div id="ModalArea" class="">
+            <div class="boxModal activeBox">
+            <button class="button-modal absolute" onclick="modalVideo()"><img src="img/btn-close.png" class="btn-close" alt=""></button>
+            <div class="content-modal">
+               
+                <h3 class="title-modal">iPhone 13 </h3>
+                <h4 class="description-modal">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, deleniti optio excepturi tempora deserunt ducimus dignissimos mollitia dolores atque ratione fugit quos culpa amet. Error iusto quo ducimus in numquam.
+                </h4>
+                
+                <div class="video-modal">
+                    <video src="img/iphone13.mp4" controls="controls"   class="video-main">
+                </div>
+
+           
+            </div>
+        </section>
+    </section>
+</main>
+<section>
+<section id="product-specifications">
+    <div class="item-spe">
+        <img src="img/icon-camera.png" alt="">
+        <h3 class="items-spe-text"> Our most advanced<br> dual‑camera system ever.</h3></div>
+    <div class="item-spe">
+        <img src="img/icon-shield.png" alt="">
+        <h3 class="items-spe-text"> Durability that’s front and<br> center. And edge to edge.</h3></div>
+    <div class="item-spe">
+        <img src="img/icon-chip.png" alt="">
+        <h3 class="items-spe-text"> A lightning-fast chip<br> that speeds up <br>everything you do.</h3></div>
+    <div class="item-spe">
+        <img src="img/icon-battery.png" alt="">
+        <h3 class="items-spe-text"> A huge leap in battery life<br> you'll notice every day.</h3></div>
+    
+</section>
+</section>
+<section>
+    <div id="flat">
+        <img src="img/flat-pink-iphone.jpg" class="flat-pink-iphone" alt="">
+        <h3 class="flat-pink-text">
+        <font color="#fec2eb">Durable</font>     <br>
+            flat-edge
+            design
+        </h3>
+       
+
+        
+    </section>
+</section>
+<section>
+    <div id="ceramic">
+        
+        <h3 class="ceramic-text-iphone">
+            Ceramic Shield,  <font color="#fec2eb">tougher</font>  than any smartphone glass
+
+
+        </h3>
+        <img src="img/border-pink-iphone.jpg" class="border-pink" alt="">
+    </div>
+</section>
+
+<section id="colors" class="">
+    
+    <div id="color-iphone-change">
+
+        <img src="img/iphone-pink.png" id="iphone-change" class="iphone-colors" alt="">
+        <img src="" alt="">
+
+
+        <div id="text-pink">
+            <h3 class="text-h3"> <font color="#fec2eb">Beautiful</font>
+                <br>
+                Pink
+                finish </h3>
+        </div>
+        <div id="text-green">
+            <h3 class="text-h3"><font color="#394c38">New </font><br>
+                Green
+                finish
+        </div>
+        <div id="text-blue">
+            <h3 class="text-h3"><font color="#b6ff9b">Beautiful</font><br>
+                Blue
+                finish
+        </div>
+        <div id="text-midnight">
+            <h3 class="text-h3"><font color="#ffa9ab">Beautiful</font><br>  
+            Midnight
+            finish
+        </div>
+        <div id="text-starlight">
+            <h3 class="text-h3"><font color="#72e5ce">Starlight</font><br>
+                Starlight
+                finish
+        </div>
+        <div id="text-red">
+            <h3 class="text-h3"><font color="#ffb44c"> Beautiful</font><br>
+                
+                Red
+                finish
+                
+                
+                </h3>
+        </div>
+    
+        <div class="labels">
+        <label for="pink" class="label pink" onclick="changePink()">
+            <input type="radio" id="pink" name="cor" >
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        
+        <label for="green" class="label green" onclick="changeGreen()">
+
+            <input type="radio" id="green" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+       
+        <label for="blue" class="label blue" onclick="changeBlue()">
+            <input type="radio" id="blue" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        <label for="midnight" class="label midnight" onclick="changeMid()">
+            <input type="radio" id="midnight" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+        
+        <label for="starlight" class="label starlight" onclick="changeStar()">
+
+            <input type="radio" id="starlight" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+       
+        <label for="red" class="label red" onclick="changeRed()">
+            <input type="radio" id="red" name="cor">
+            <div class="check">
+                <div class="select"></div>
+            </div>
+        </label>
+    </div>
+</section>
+<section>
+<div id="buy">
+    <h3 class="name"><font color="#fec2eb">iPhone 13</font> </h3>
+    <h3 class="desc">
+        Your new <br>superpower.
+   
+    <h3 class="price">
+        From $29.12/mo. for 24 mo. or $699 before trade-in1*
+    </h3>
+    <br>
+
+    <div class="btns-buy">
+       <a href="#" class="btn-buy">buy</a> </li>
+        <a href="#" class="watch" >See the others products</a></li>
+    </div>
+
+   
+</div>
+</section>
+<section class="gray">
+<div id="iphone-se">
+    <div class="text-area-iphone-se">
+        <h3 class="desc-iphone-se"> The new</h3>
+        <h3 class="title-se"> <img src="img/iphone-se-icon.png" alt=""></h3>
+        <h3 class="desc-iphone-se plus ">
+            Love the power. Love the price
+        </h3>
+        <div class="btns-se">
+        <a href="#" class="btn-learn" >Learn More</a>
+        <a href="#" class="btn-buy-se">Buy</a>
+    </div>
+    </div>
+    <img src="img/iphone-se-new.png" class="img-iphone-se" alt="">
+</div>
+</section>
+<section class="gray">
+    <div id="macbook">
+            <h3 class="title">Macbook Pro</h3>
+            <h3 class="desc">Supercharged for pros.</h3>
+            <h3 class="price">From $1999</h3>
+            <div class="btns-mac">
+                <a href="#" class="btn-learn" >Learn More</a><a href="#" class="btn-buy-se">Buy</a>
+                </div>
+            <img src="img/macbook.png" class="macbook" alt="">
+        </div>
+    </div>
+</section>
+<section class="gray">
+    <div id="ipad">
+     
+        <div class="text-area-ipad">
+            
+            <img src="img/iPad-Air-Name.png" class="name-ipad" alt="">
+            <h3 class="title">
+                Light. Bright. Full of might
+            </h3>
+            <div class="btns-ipad">
+                <a href="#" class="btn-learn">Learn More</a>
+                <a href="#" class="btn-buy-se">Buy</a>
+            </div>
+        </div>
+        <img src="img/ipad.png" class="iPad" alt="">
+    </div>
+</section>
+<section id="grid-plus">
+    <div class="items applewatch">
+        <img src="img/watch-name.png" class="watch-name" alt="">
+
+        <h3 class="title">it's our large display yet</h3>
+
+        <div class="btns-items">
+            <a href="#" class="buy-item">Buy</a> 
+           
+        </div>
+
+        <img src="img/apple-watch.png" class="watch-prod" alt="">
+
+    </div>
+    <div class="items fitness">
+        <img src="img/fitness-name.png" class="fitness-name" alt="">
+        <h3 class="title">Improve your <font color="#a6ff00;"> fitness.</font> Practice<font color="#a6ff00;"> mindfulness.</font></h3>
+            <div class="btns-fitness">
+                <a href="#" class="btn-learn green" >See what's new</a>
+                <a href="#" class="btn-buy-se green">Try it free</a>
+            </div>
+    </div>
+    <div class="items studio">
+        <h3 class="title">Studio Display</h3>
+        <h3 class="desc">A sigh to be bold</h3>
+        <div class="btns-items">
+            <a href="#" class="buy-item">Buy</a> 
+           
+        </div>
+        <img src="img/studio-display.png" class="studio-product" alt="">
+    </div>
+    <div class="items airpods"> 
+        <div class="air-pods-area">
+            <img src="img/airpods.png" class="airpods-product" alt="">
+           <h3 class="title">AirPods</h3> 
+           <h3 class="desc"> 3rd generation</h3>
+           <h3 class="price"> $179  </h3>  
+           <div class="btns-items">
+            <a href="#" class="btn-buy-se air-btn">Buy</a> 
+           
+        </div>
+        </div>
+        
+        
+        <div class="airpods-back">
+       
+    </div>
+    </div>
+    <div class="items tvplus">
+        <div class="tvplus-area">
+            <img src="img/tvplus-text.png" class="friday-text" alt="">
+
+            <div class="text-area-tvplus">
+            <h3 class="title">Yankees at Roylas, 5:00 p.m.PDT</h3>
+            <h3 class="title">Yankees at Roylas, 5:00 p.m.PDT</h3>
+           
+        </div>
+        <a href="#" class="catch">Catch the pregame coverage</a>
+    </div>
+        <div class="tv-back">
+
+        </div>
+    </div>
+    <div class="items seeall">
+        
+        <h3 class="see-all-text">
+           <a href="#"> See all products and service by Apple</a>
+        </h3>
+       
+    </div>
+</section>
+<footer>
+    <section id="footer">
+        <div class="text-footer-ex">
+            $4.99/month after free trial. Only one offer per Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. This offer is not available if you or your Family have previously accepted an Apple TV+ one year free offer. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
+        </div>
+        <div class="row-footer">
+
+
+                <ul>
+                    <p>Shop </p>
+                    <li><a href="#">Store</a> </li>
+                    <li><a href="#">iphone</a> </li>
+                    <li><a href="#">iPad</a> </li>
+                    <li><a href="#">Macbook</a> </li>
+                    <li><a href="#">AirPods</a> </li>
+                    <li><a href="#">Watch</a> </li>
+                    <li><a href="#">Acessories</a> </li>
+                </ul>
+           
+                
+                <ul class="footer-links">
+                    <p>Services</p>
+                    <li><a href="#">Apple music</a> </li>
+                    <li><a href="#">Apple TV+</a> </li>
+                    <li><a href="#">Apple Fitness/a> </li>
+                    <li><a href="#">Apple News</a> </li>
+                    <li><a href="#">iCloud</a> </li>
+                    <li><a href="#">App Store</a> </li>
+                </ul>
+            
+          
+                <ul>
+                    <p>About Apple </p>
+                    <li><a href="#">Newsroom</a> </li>
+                    <li><a href="#">Apple Leadership</a> </li>
+                    <li><a href="#">Career Opportunities</a> </li>
+                    <li><a href="#">Investors</a> </li>
+                    <li><a href="#">Ethics & Compliance</a> </li>
+                    <li><a href="#">Contact Apple</a> </li>
+                </ul>
+
+               
+            </div>
+            <h3 class="more"> More ways to shop <a href="#">Find an Apple Store</a>  or <a href="#"> other retailer</a> near you. Or call 1-800-MY-APPLE.</h3>
+        </div>
+        <div class="copy">
+            <h3 class="copy-text">
+                Copyright © 2022 Apple Inc. All rights reserved.
+            </h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+                <li class="none-b"><a href="#" >Site Map</a></li>
+            </ul>
+            
+    </section>
+</footer>
+</body>
+<script src="script.js"></script>
+</html>
